@@ -29,7 +29,7 @@ header {
   margin-bottom: 10px;
 }
 
-.nav-link {
+nav .nav-link {
   color: var(--theme-color);
   font-size: 24px;
   margin: 0px 5px;
@@ -64,6 +64,21 @@ header {
 .work .col-lg-12 {
   padding-right: 0 !important;
   padding-left: 0 !important;
+}
+
+.card {
+    box-shadow: var(--card-shadow);
+    border: 3px solid var(--theme-color);
+}
+
+.card-img-top {
+  max-height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-body {
+    background: var(--default-mask);
 }
 
 /* Skills */
