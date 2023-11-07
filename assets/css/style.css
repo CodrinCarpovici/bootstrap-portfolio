@@ -1,8 +1,43 @@
-.col-lg-6, .col-lg-12 {
-    padding-right: 0 !important;
-    padding-left: 0 !important;
-}
+/* All */
+:root {
+    --theme-color: rgb(146, 204, 205);
+    --theme-color-hover: rgb(71, 195, 197);
+    --secondary-color: rgb(49, 52, 61);
+    --text-theme-color: rgb(68, 88, 118);
+    --text-theme-color-hover: rgb(16, 53, 107);
+    --mask-color: rgba(100, 144, 177, 0.8);
+    --light-mask-color: rgba(123, 150, 170, 0.3);
+    --card-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    --default-mask: linear-gradient(var(--mask-color), var(--mask-color));
+  }
 
 h2 {
-    margin-top: 10px;
+  margin-top: 10px;
 }
+
+/* Navbar */
+
+/* Hero */
+.customJumbo {
+  height: 100vh;
+  background-image: var(--default-mask), url(../images/02-hero-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* Work */
+.col-lg-6,
+.col-lg-12 {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Skills */
+
+/* About */
+
+/* Contact */
+
+/* Footer */
