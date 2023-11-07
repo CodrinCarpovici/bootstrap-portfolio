@@ -15,6 +15,15 @@ h2 {
   margin-top: 10px;
 }
 
+/* Button Styles */
+button, .btn {
+    transition: 0.1s ease-in;
+}
+
+button:hover, .btn:hover {
+    box-shadow: var(--card-shadow);
+}
+
 /* Navbar */
 header {
   background-color: var(--secondary-color);
@@ -100,4 +109,8 @@ nav .nav-link {
   text-decoration-thickness: 3px;
   text-underline-offset: 5px;
   transition: 0.1s ease-in-out;
+}
+
+.footer .nav-link:hover {
+    color: black !important;
 }
