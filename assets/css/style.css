@@ -16,6 +16,28 @@ h2 {
 }
 
 /* Navbar */
+header {
+  background-color: var(--secondary-color);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  background: var(--theme-color);
+  color: var(--secondary-color);
+  padding: 0px 10px 0px 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.nav-link {
+  color: var(--theme-color);
+  font-size: 24px;
+  margin: 0px 5px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  transition: 0.1s ease-in-out;
+}
 
 /* Hero */
 .customJumbo {
@@ -38,8 +60,8 @@ h2 {
   box-shadow: var(--card-shadow);
 }
 /* Work */
-.col-lg-6,
-.col-lg-12 {
+.work .col-lg-6,
+.work .col-lg-12 {
   padding-right: 0 !important;
   padding-left: 0 !important;
 }
