@@ -17,11 +17,11 @@
   </head>
   <body>
     <!--Header-->
-    <header>
+    <header class="container-fluid fixed-top customNav">
       <!--Navbar-->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg container">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Codrin Carpovici</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -33,19 +33,25 @@
           >
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div
+            class="collapse navbar-collapse justify-content-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-0 mb-2 mb-lg-0">
               <li class="nav-item">
                 <a class="nav-link" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Work</a>
+                <a class="nav-link" href="#work">Work</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Resume</a>
@@ -59,66 +65,196 @@
     <!--End Header-->
 
     <!--Jumbotron-->
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3">
-      <div class="container-fluid py-5 jumboCopy">
-        <img src="" alt="Codrin Carpovici" />
+    <div
+      class="p-5 mb-4 bg-body-tertiary rounded-3 customJumbo container-fluid text-center"
+    >
+      <div class="container py-5 jumboCopy">
+        <div class="img-wrapper">
+          <img
+            src="./assets/images/author.png"
+            alt="Codrin Carpovici author"
+            class="img-fluid rounded-circle author"
+          />
+        </div>
         <h1 class="display-5 fw-bold">Codrin Gabriel Carpovici</h1>
         <p class="col-md-12 fs-4">Web Developer</p>
-        <button class="btn btn-primary btn-lg" type="button">About Me</button>
+        <a class="btn btn-primary btn-lg jumboBtn" type="button" href="#about">
+          About Me
+        </a>
       </div>
     </div>
     <!--End Jumbotron-->
 
     <!--Work Section-->
-    <section class="work container">
-      <h2>Work</h2>
-      <div class="container-fluid">
+    <section id="work" class="work container">
+      <h2 class="text-center">Work</h2>
+      <div class="container-fluid mt-3 px-4">
         <div class="row">
-          <div class="col"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12"></div>
-          <div class="col-lg-6 col-md-6 col-sm-12"></div>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 col-md-6 col-sm-12"></div>
-          <div class="col-lg-6 col-md-6 col-sm-12"></div>
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="card">
+              <img
+                src="./assets/images/developer.jpg"
+                class="card-img-top"
+                alt="developer coding"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Dev Portfolio</h5>
+                <p>React/Bootstrap/framer-motion</p>
+                <p>
+                  Modern Developer Website I made using React and Bootstrap,
+                  with framer-motion to add some modern animations.
+                </p>
+                <a href="https://codrincarpovici.com/" class="btn btn-primary"
+                  >Visit Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                src="./assets/images/restaurant.jpg"
+                class="card-img-top"
+                alt="restaurant terrace"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Little Lemon</h5>
+                <p>React/JavaScript/SCSS</p>
+                <p>
+                  Reserve-a-Table feature for the Little Lemon Restaurant,
+                  including form validation and the use of local storage.
+                </p>
+                <a
+                  href="https://github.com/CodrinCarpovici/projectcapstone"
+                  class="btn btn-primary"
+                  >Visit Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                src="./assets/images/02-portfolio-2.jpg"
+                class="card-img-top"
+                alt="mechanic working"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Eurokit</h5>
+                <p>React/Bootstrap/SCSS</p>
+                <p>
+                  Catalogue style website, used by the business to showcase its
+                  products online.
+                </p>
+                <a href="https://eurokit.org/" class="btn btn-primary"
+                  >Visit Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                src="./assets/images/garden.jpg"
+                class="card-img-top"
+                alt="garden design"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Lucky Shrub</h5>
+                <p>HTML/CSS</p>
+                <p>Simple landing page for a Garden Design firm.</p>
+                <a
+                  href="https://github.com/CodrinCarpovici/luckyShrub"
+                  class="btn btn-primary"
+                  >Visit Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-sm-12">
+            <div class="card">
+              <img
+                src="./assets/images/02-portfolio-1.jpg"
+                class="card-img-top"
+                alt="placeholder"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Placeholder</h5>
+                <p>Placeholder Tech...</p>
+                <p>Placeholder Description...</p>
+                <a href="#" class="btn btn-primary">Placeholder...</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
     <!--End Work Section-->
 
     <!--Skills Section-->
-    <section class="skills container">
-      <h2>Skills</h2>
-      <div class="container-fluid">
-        <ul class="list-group">
-          <li class="list-group-item">An item</li>
-          <li class="list-group-item">A second item</li>
-          <li class="list-group-item">A third item</li>
-          <li class="list-group-item">A fourth item</li>
-          <li class="list-group-item">And a fifth one</li>
+    <section id="skills" class="skills container text-center border-top mt-4">
+      <h2 class="">Skills</h2>
+      <div class="container-fluid w-50">
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item">HTML</li>
+          <li class="list-group-item">CSS</li>
+          <li class="list-group-item">Bootstrap</li>
+          <li class="list-group-item">Javascript</li>
+          <li class="list-group-item">NodeJS</li>
+          <li class="list-group-item">jQuery</li>
+          <li class="list-group-item">ReactJS</li>
         </ul>
       </div>
     </section>
     <!--End Skills Section-->
 
     <!--About/Contact Section-->
-    <section class="about container">
+    <section id="about" class="about container border-top mt-4">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-6 col-sm-12">
-            <h2>About Me</h2>
-            <p></p>
+            <h2 class="text-center">About Me</h2>
+            <p>
+              I'm Codrin, a Front End Developer with a passion for creating user
+              friendly websites and applications. My primary technical skills
+              are in ReactJS, Bootstrap, JavaScript, HTML, CSS/SASS. I'm
+              constantly learning and keeping up to date with the latest
+              technologies and developments in the industry.
+            </p>
+            <p>
+              When I'm not coding, I enjoy exploring new cultures, playing video
+              games, and learning about science and history. I believe that
+              problem-solving and creativity are at the core of development, and
+              I strive to deliver solutions that are both functional and
+              aesthetically pleasing.
+            </p>
           </div>
-          <div class="col-lg-6 col-sm-12">
-            <h2>Contact</h2>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
-            </ul>
+          <div id="contact" class="col-lg-6 col-sm-12 contact text-center">
+            <h2 class="text-center">Contact</h2>
+            <div class="container-fluid w-50">
+              <ul class="list-group list-group-flush text-center text">
+                <li class="contact-item list-group-item">
+                  <a href="tel:00447472272377" class="contact-link text-muted"
+                    >+447472272377</a
+                  >
+                </li>
+
+                <li class="contact-item list-group-item">
+                  <a
+                    href="https://github.com/CodrinCarpovici"
+                    class="contact-link text-muted"
+                    >GitHub</a
+                  >
+                </li>
+                <li class="contact-item list-group-item">
+                  <a
+                    href="https://www.linkedin.com/in/codrin-gabriel-c-31b4b899/"
+                    class="contact-link text-muted"
+                    >LinkedIn</a
+                  >
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -126,23 +262,28 @@
     <!--End About/Contact Section-->
 
     <!--Footer-->
-    <footer class="footer container">
-      <div class="container-fluid">
-        <ul>
-          <li class="">
-            <a class="" aria-current="page" href="#">Home</a>
+    <footer class="footer border-top mt-4">
+      <div class="container d-flex justify-content-end">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link px-2 text-muted" aria-current="page" href="#"
+              >Home</a
+            >
           </li>
-          <li class="">
-            <a class="" href="#">Work</a>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-muted" href="#work">Work</a>
           </li>
-          <li class="">
-            <a class="" href="#">Skills</a>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-muted" href="#skills">Skills</a>
           </li>
-          <li class="">
-            <a class="" href="#">Contact</a>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-muted" href="#about">About</a>
           </li>
-          <li class="">
-            <a class="" href="#">Resume</a>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-muted" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-2 text-muted" href="#">Resume</a>
           </li>
         </ul>
       </div>
