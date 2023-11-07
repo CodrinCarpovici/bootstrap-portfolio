@@ -67,8 +67,8 @@ nav .nav-link {
 }
 
 .card {
-    box-shadow: var(--card-shadow);
-    border: 3px solid var(--theme-color);
+  box-shadow: var(--card-shadow);
+  border: 3px solid var(--theme-color);
 }
 
 .card-img-top {
@@ -78,7 +78,7 @@ nav .nav-link {
 }
 
 .card-body {
-    background: var(--default-mask);
+  background: var(--default-mask);
 }
 
 /* Skills */
@@ -88,3 +88,16 @@ nav .nav-link {
 /* Contact */
 
 /* Footer */
+.footer {
+    background: var(--secondary-color);
+    width: 100%;
+}
+
+.footer .nav-link {
+  color: var(--theme-color) !important;
+  margin: 0px 5px;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 5px;
+  transition: 0.1s ease-in-out;
+}
